@@ -1,0 +1,94 @@
+\section{CDolacz Class Reference}
+\label{class_c_dolacz}\index{CDolacz@{CDolacz}}
+klasa okna dolaczania do gry  
+
+
+{\tt \#include $<$Dolacz.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+afx\_\-msg void {\bf OnBnClickedOk} ()
+\begin{CompactList}\small\item\em dolaczanie do gry \item\end{CompactList}\item 
+virtual BOOL {\bf OnInitDialog} ()
+\begin{CompactList}\small\item\em wyswietla okno wpisywania IP oraz deklaracja bitmap \item\end{CompactList}\item 
+afx\_\-msg void {\bf OnPaint} ()
+\item 
+void {\bf RysujKoloryCzolgow} (int x, int y, int z)\label{class_c_dolacz_b2fd508093af505ac56a8e481608b673}
+
+\begin{CompactList}\small\item\em Rysuje bitmapki kolorow czolgow. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+CString {\bf nick}\label{class_c_dolacz_7002e1fb7f7be0cc17ef4c7483479e9d}
+
+\begin{CompactList}\small\item\em nick gracza \item\end{CompactList}\item 
+char {\bf serv\_\-ip} [20]\label{class_c_dolacz_9e5eabb48873bc8f66053c1e3d7d4af4}
+
+\begin{CompactList}\small\item\em IP serwera. \item\end{CompactList}\item 
+int {\bf map\_\-id}\label{class_c_dolacz_199e0ef23e40ada288811e3ccca04403}
+
+\begin{CompactList}\small\item\em identyfikator mapy \item\end{CompactList}\item 
+int {\bf frag\_\-limit}\label{class_c_dolacz_2a4da32ef62ef900e69c4896045cbcc2}
+
+\begin{CompactList}\small\item\em liczba limitu fragow \item\end{CompactList}\item 
+BOOL {\bf kolor}\label{class_c_dolacz_9efc99d57bd960e7081e6421d838a11b}
+
+\begin{CompactList}\small\item\em kolor gracza \item\end{CompactList}\item 
+CBitmap {\bf rysuj\_\-kolor}\label{class_c_dolacz_36e48aa6831f65ce55b331200c942c39}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie wyboru koloru czolgow. \item\end{CompactList}\item 
+CBitmap {\bf rysuj\_\-kolor\_\-maska}\label{class_c_dolacz_277607e23ca58f056b9114c712bad1ba}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie maski wyboru koloru czolgow. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+klasa okna dolaczania do gry 
+
+
+
+\subsection{Member Function Documentation}
+\index{CDolacz@{CDolacz}!OnBnClickedOk@{OnBnClickedOk}}
+\index{OnBnClickedOk@{OnBnClickedOk}!CDolacz@{CDolacz}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CDolacz::OnBnClickedOk ()}\label{class_c_dolacz_1f292ca9f4124419e692bd46612b7330}
+
+
+dolaczanie do gry 
+
+Tworzone jest gniazdo i podlacza sie do serwera jezeli jest bledne blad gniazda lub nie moze znalezc serwera wyskakuje ponownie okinko wpisywania IP Po nawiazaniu polaczenia wysyla na serwer informacje o kolorze i nick dostaje informacje zwrotna czy serwer jest pelen lub czy dany kolor nie jest zajety oraz identyfikator mapy oraz limit fragow jezeli jest zajety wyskakuje alert z taka informacja oraz wyswietla sie ponownie okienko wpisywania IP jezeli jest juz gracz o takim kolorze to wyskakuje rowniez alert z taka informacja i mozna zmienic kolor gdy wszystko jest ok zostaje wywolana funkcja OnOK() po ktorej okno jest zamkniete i wyswietla sie okno gry 
+
+$<$gniazdo serwera
+
+$<$okno wpisywania IP
+
+$<$okno wpisywania IP
+
+/brief zmienna pomocnicza przechowoje informacje zwrotna czy serwer jest zajety lub istnieje gracz o takim kolorze 0 - wszystko ok 1 - istnieje gracz o takim kolorze 2- serwer jest pelen
+
+$<$okno wpisywania IP \index{CDolacz@{CDolacz}!OnInitDialog@{OnInitDialog}}
+\index{OnInitDialog@{OnInitDialog}!CDolacz@{CDolacz}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}BOOL CDolacz::OnInitDialog ()\hspace{0.3cm}{\tt  [virtual]}}\label{class_c_dolacz_de393dc6b91f5ab5a18f821077c193f5}
+
+
+wyswietla okno wpisywania IP oraz deklaracja bitmap 
+
+
+
+$<$okno wpisywania IP
+
+kolory.LoadBitmap(BM\_\-COLORS);
+
+Inicjacja bitmapy kolorow czolgow do wyboru przy laczeniu sie z serwerem \index{CDolacz@{CDolacz}!OnPaint@{OnPaint}}
+\index{OnPaint@{OnPaint}!CDolacz@{CDolacz}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CDolacz::OnPaint ()}\label{class_c_dolacz_d063ba850976d65ec2a70554f6dedb88}
+
+
+
+
+Wyswietlanie bitmap czolgow w oknie 
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Moje dokumenty/Visual Studio Projects/Tanki.v/Kopia (3) Tanki/Dolacz.h\item 
+Moje dokumenty/Visual Studio Projects/Tanki.v/Kopia (3) Tanki/Dolacz.cpp\end{CompactItemize}

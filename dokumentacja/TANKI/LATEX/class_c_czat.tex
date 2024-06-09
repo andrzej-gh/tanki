@@ -1,0 +1,70 @@
+\section{CCzat Class Reference}
+\label{class_c_czat}\index{CCzat@{CCzat}}
+klasa okienka czatu  
+
+
+{\tt \#include $<$Czat.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+afx\_\-msg void {\bf OnBnClickedOk} ()
+\begin{CompactList}\small\item\em wysylanie wiadomosci \item\end{CompactList}\item 
+virtual BOOL {\bf OnInitDialog} ()\label{class_c_czat_8acc9cab1761b6918d1b4fffda99bc79}
+
+\begin{CompactList}\small\item\em deklaruje Timer \item\end{CompactList}\item 
+afx\_\-msg void {\bf OnTimer} (UINT nIDEvent)
+\begin{CompactList}\small\item\em Pobieranie wiadomosci. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+CString {\bf tekst}\label{class_c_czat_8594be8b87f722c3147916de26dbe7ec}
+
+\begin{CompactList}\small\item\em wiadomosc jaka chcemy wyslac \item\end{CompactList}\item 
+char {\bf serv\_\-ip} [20]\label{class_c_czat_f9cb674fce244307725de3607208ba4e}
+
+\begin{CompactList}\small\item\em IP serwera. \item\end{CompactList}\item 
+CListBox {\bf lista\_\-czat}\label{class_c_czat_bb5beb3b3081e32dc9b18bd103f0c2b8}
+
+\begin{CompactList}\small\item\em lista wiadomosci czatu \item\end{CompactList}\item 
+char {\bf nick} [20]\label{class_c_czat_8d3f862b86c231a8b8d64ca4b67e0244}
+
+\begin{CompactList}\small\item\em nick gracza \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+klasa okienka czatu 
+
+
+
+\subsection{Member Function Documentation}
+\index{CCzat@{CCzat}!OnBnClickedOk@{OnBnClickedOk}}
+\index{OnBnClickedOk@{OnBnClickedOk}!CCzat@{CCzat}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CCzat::OnBnClickedOk ()}\label{class_c_czat_7032c63d6d57d44641b4613a05fe5a2c}
+
+
+wysylanie wiadomosci 
+
+tworzy gniazdo, laczy sie z serwerem, wysyla ramke z wiadomoscia 
+
+$<$wysylana wiadomosc
+
+$<$gniazdo \index{CCzat@{CCzat}!OnTimer@{OnTimer}}
+\index{OnTimer@{OnTimer}!CCzat@{CCzat}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CCzat::OnTimer (UINT {\em nIDEvent})}\label{class_c_czat_e48522d027efce15cc5eb863319463a9}
+
+
+Pobieranie wiadomosci. 
+
+tworzy gniazdo, laczy sie z serwerem, wysyla zapytanie o ilosc wiadomosci, odbiera informacje o ilosci wiadomosci, rozlacza i laczy sie na nowo przy pobieraniu kazdej nie odebranej jeszcze wiadomosci (wysylaniu informacji ktora wiadomosc chce pobrac i jej odebraniu) 
+
+$<$ ramki wysylana i odbierana
+
+$<$gniazdo serwera
+
+gniazdo serwera 
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Moje dokumenty/Visual Studio Projects/Tanki.v/Kopia (3) Tanki/Czat.h\item 
+Moje dokumenty/Visual Studio Projects/Tanki.v/Kopia (3) Tanki/Czat.cpp\end{CompactItemize}

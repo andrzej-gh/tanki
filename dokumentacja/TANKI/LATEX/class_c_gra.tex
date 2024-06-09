@@ -1,0 +1,245 @@
+\section{CGra Class Reference}
+\label{class_c_gra}\index{CGra@{CGra}}
+klasa okna gry  
+
+
+{\tt \#include $<$Gra.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+afx\_\-msg void {\bf OnKeyDown} (UINT nChar, UINT nRepCnt, UINT nFlags)
+\item 
+virtual BOOL {\bf OnInitDialog} ()
+\item 
+afx\_\-msg void {\bf OnTimer} (UINT nIDEvent)
+\item 
+afx\_\-msg void {\bf OnPaint} ()
+\item 
+void {\bf RysujZmienneMen} (int x, int y, int z)
+\begin{CompactList}\small\item\em wyswietlanie liczb i znaczkow \item\end{CompactList}\item 
+void {\bf WyswietlKolorCzolguId} (int x, int y, int z)
+\begin{CompactList}\small\item\em Funkcja wyswietlajaca ikone czolgu. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+int {\bf tank\_\-id}\label{class_c_gra_67d8e807d5069e1d0205b0edb8d71693}
+
+\begin{CompactList}\small\item\em identyfikator czolgu gracza \item\end{CompactList}\item 
+CBitmap {\bf trawa}\label{class_c_gra_ad5dac1b521e954d4530c49d8f492ccc}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie trawy. \item\end{CompactList}\item 
+CBitmap {\bf trawa\_\-maska}\label{class_c_gra_cfd2826e705b7e52320a707c05a294c3}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie maski trawy. \item\end{CompactList}\item 
+CBitmap {\bf czolg}\label{class_c_gra_a13819292ce1bff5fa94b4f3fd739231}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie czolgu. \item\end{CompactList}\item 
+CBitmap {\bf czolg\_\-maska}\label{class_c_gra_bc1dea9b77d963a206499a373faf212f}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie maski czolgu. \item\end{CompactList}\item 
+CBitmap {\bf objekt}\label{class_c_gra_b4ef60c2cb293e4abe2e878869bdc12e}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie obiektu wody gory drzewa. \item\end{CompactList}\item 
+CBitmap {\bf objekt\_\-maska}\label{class_c_gra_f81724de42e47499c109cb75a69ee1e7}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie maski obiektu wody gory drzewa. \item\end{CompactList}\item 
+CBitmap {\bf premia}\label{class_c_gra_961cb4e756bcd4e5d5413051e8fc413c}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie bonusow. \item\end{CompactList}\item 
+CBitmap {\bf premia\_\-maska}\label{class_c_gra_fe90b2935e3ad7ee980c7952b2d87cf9}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie maski bonusow. \item\end{CompactList}\item 
+CBitmap {\bf pociski}\label{class_c_gra_2797874ac08a9ba49c4cdf544df9ccb9}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie rakiet oraz lasera. \item\end{CompactList}\item 
+CBitmap {\bf pociski\_\-maska}\label{class_c_gra_939bbd25ef39fbbb1eab89872dd19d68}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie maski rakiet oraz lasera. \item\end{CompactList}\item 
+CBitmap {\bf menu\_\-dol}\label{class_c_gra_1f63b9162c437d5fad2f5d8398ac651c}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie tla menu dolnego. \item\end{CompactList}\item 
+CBitmap {\bf menu\_\-dol\_\-maska}\label{class_c_gra_dc5ddd405137e922c90b48c6b3bd546e}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie maski tla menu dolnego. \item\end{CompactList}\item 
+CBitmap {\bf menu\_\-gora}\label{class_c_gra_dcb36ba11caf0fbb93573418665f817a}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie tla menu gornego. \item\end{CompactList}\item 
+CBitmap {\bf menu\_\-gora\_\-maska}\label{class_c_gra_73b2cf173ca3cb9d529334a76d095a1f}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie maski tla menu gornego. \item\end{CompactList}\item 
+CBitmap {\bf menl}\label{class_c_gra_8da74564a54c848b8090ae1832b949dd}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie zmiennych uzywanych w menu cyfry oraz ikony broni. \item\end{CompactList}\item 
+CBitmap {\bf menl\_\-maska}\label{class_c_gra_bb8bbca0884c7bd979f8cf2482f07c8c}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie maski zmiennych uzywanych w menu cyfry oraz ikony broni. \item\end{CompactList}\item 
+CBitmap {\bf czolg\_\-id}\label{class_c_gra_e6f316fa44efbb60200ee9cdd8b4399d}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie ikonie czolgu id. \item\end{CompactList}\item 
+CBitmap {\bf czolg\_\-id\_\-maska}\label{class_c_gra_e53d5172a78e0098bd49f600c9fc5a5d}
+
+\begin{CompactList}\small\item\em Zmienna przypisana bitmapie maski ikonie czolgu id. \item\end{CompactList}\item 
+char {\bf nick} [20]\label{class_c_gra_a479082e9c651e964f2c2ec519883ea9}
+
+\begin{CompactList}\small\item\em przechowuje nick gracza \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+klasa okna gry 
+
+
+
+\subsection{Member Function Documentation}
+\index{CGra@{CGra}!OnKeyDown@{OnKeyDown}}
+\index{OnKeyDown@{OnKeyDown}!CGra@{CGra}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CGra::OnKeyDown (UINT {\em nChar}, UINT {\em nRepCnt}, UINT {\em nFlags})}\label{class_c_gra_9d3424a93be881e1e74e221903b52a29}
+
+
+za pomoca switcha wysyla do serwera informacje o dzialaniu gracza 
+
+Sterowanie klawiatury \index{CGra@{CGra}!OnInitDialog@{OnInitDialog}}
+\index{OnInitDialog@{OnInitDialog}!CGra@{CGra}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}BOOL CGra::OnInitDialog ()\hspace{0.3cm}{\tt  [virtual]}}\label{class_c_gra_597f4adb9cc7e494156b2349f04aaf1f}
+
+
+Na poczatku zostaje wywolane okno dolaczania do gry, jezeli sie nie udalo polaczyc a okno zostalo zamknite to program zostaje zamkniety kopiowanie informacji o limicie fragow oraz id mapy stworzenie mapy, zadeklarowanie bitmap polaczenie z serwerem za pomoca gniazda down oraz up zadeklarowanie Timera 
+
+$<$okno dolaczania do gry
+
+Ponizszy blok deklaraci : Inicjuje bitmape sluzaca do wyswietlania obiektu Przypisuje zmiennej CBitmap bitmape obiektu Przypisuje zmiennej CBitmap bitmape maski Pobiera inforamacje o bitmapie \index{CGra@{CGra}!OnTimer@{OnTimer}}
+\index{OnTimer@{OnTimer}!CGra@{CGra}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CGra::OnTimer (UINT {\em nIDEvent})}\label{class_c_gra_21f5009ba5dcea40936e833033773058}
+
+
+sprawdza czy ktos uzyskal limit fragow, jezeli tak to wyswietla okno wyniki, a nastepnie zamyka program pobiera z serwera informacje o graczach, minach, pociskach, zniszczonych lasach i bonusach kopjuje te informacje do tablic struktur \doxyref{STank}{p.}{struct_s_tank}, \doxyref{SMina}{p.}{struct_s_mina}, \doxyref{SBonus}{p.}{struct_s_bonus}, \doxyref{SPocisk}{p.}{struct_s_pocisk} oraz to tablicy indeksow zniszczonych drzew wywoluje funkcje \doxyref{OnPaint()}{p.}{class_c_gra_fa9f60114e62edd6cfb88c6592e0b9ce} 
+
+$<$zmienna pomoznicza
+
+$<$zmienna pomocnicza odbioru czolgow
+
+$<$zmienna pomocnicza odbioru min
+
+$<$zmienna pomocnicza odbioru pociskow
+
+$<$zmienna pomocnicza odbioru bonusow
+
+$<$zmienna pomocnicza sprawdzania czy ktos osiagnol limit fragow
+
+$<$okno wynikow
+
+Wczytywanie funkcji wyswietlajacej bitmapy \index{CGra@{CGra}!OnPaint@{OnPaint}}
+\index{OnPaint@{OnPaint}!CGra@{CGra}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CGra::OnPaint ()}\label{class_c_gra_fa9f60114e62edd6cfb88c6592e0b9ce}
+
+
+rysuje po kolej trawe, obiekty mapy, bonusy, pociski, czolgi i elementy interface'u 
+
+Funkcja sprawdza czy na mapie istnieje czolg
+
+Grupa ta w kolejnosci i analogicznie do nastepnych: Tworzy obiekt kontekstu pamieciowego Tworzy kontekst wewn¹trz klasy pochodz¹cej od CView lub CDialog Tworzy kontekst pamieciowy kompatybilny kontekstem okna Wiaze zmienna skojazona z dana bitmapa z kontekstem pamiêciowym Wyswietla kontekst pamiêciowy na ekranie
+
+Wyswietla bitmape trawy na ekranie
+
+Petla sprawdza i rysuje w oknie obiekty typu gora ,woda, drzewo dla kazdego elementu znajdujacego sie na planszy
+
+Wyswietla bitmape gory wody lub drzewa w zaleznosci od zmiennej bm\_\-id
+
+Petla odpowiedzialna jest za wyswietlanie w oknie wszystkich elementow bonus
+
+Wyswietlana jest bitmapa bonusow w zaleznosci od zmiennej bm\_\-id
+
+Petla odpowiedzialna jest za wyswietlanie w oknie wszystkich obiektow min
+
+Wyswietla bitmape miny w oknie
+
+Petla odpowiedzialna jest za wyswietlanie pociskow jak i lasera w zaleznosci od kata strzalu
+
+Petla odpowiedzialna jest za wyswietlanie czolgu na mapie idealnie po srodku okna wzg tego punktu przemieszczaja sie inne obiekty na ekranie
+
+Wyswietla bitmape czolgu w oknie wizualnie zmieniajac kat widzianego czolgu za pomoca zmiennej bm\_\-id
+
+Wyswietlana jest bitmapa tla menu dolnego
+
+Wyswietlana jest bitmapa tla menu gornego
+
+wyswietla punkty hp zmienne temp od wysietlania statsow
+
+Liczba HP rozdzielana jest na skladowe w celu wyswietlenia odpowiedniej bitmapy numerycznej
+
+wyswietla ilosc armora Zmienne temp od wysietlania statsow
+
+Liczba ARMOR rozdzielana jest na skladowe w celu wyswietlenia odpowiedniej bitmapy numerycznej
+
+Rysuje ikone broni w zaleznosci od weapon\_\-id wyswietla albo ikone lasera albo rakiety
+
+Wyswietla w zaleznosci od posiadanej aktualnie broni, weapon\_\-id, ilosc amunicji lub znak nieskonczonosci
+
+Liczba iloscL(asera) rozdzielana jest na skladowe w celu wyswietlenia odpowiedniej bitmapy numerycznej
+
+Wyswietla ilosc min Zmienne temp od wysietlania statsow
+
+Liczba iloscM(in) rozdzielana jest na skladowe w celu wyswietlenia odpowiedniej bitmapy numerycznej
+
+Wyswietla czas trwania przyspieszenia Zmienne temp od wysietlania statsow
+
+Liczba speed\_\-time rozdzielana jest na skladowe w celu wyswietlenia odpowiedniej bitmapy numerycznej
+
+Wyswiela ilosc frago gracza Zmienne temp od wysietlania statsow
+
+Liczba score rozdzielana jest na skladowe w celu wyswietlenia odpowiedniej bitmapy numerycznej
+
+Wyswietla bitmape koloru gracza tank\_\-id
+
+Wyswietla frag limit frag\_\-limit ustawiony na serwerze Zmienne temp od wysietlania statsow
+
+Liczba frag\_\-limit rozdzielana jest na skladowe w celu wyswietlenia odpowiedniej bitmapy numerycznej
+
+Sostuje tanki wedlug liczby fragow
+
+Zmienna tymczasowa przechowywujaca informacje o jednym z graczy podczas zamiany w sortowaniu bombelkowym
+
+Zmienna tymczasowa potrzebna do sortowania bombelkowego
+
+Petla sortujaca bombelkowo graczy wedlug liczby fragow score, temp\_\-player[0][0] jest to gracz na najwyzszym wynikiem
+
+Zmienna przechowuje liczbe fragow
+
+Zmienna przechowuje kolor gracza o danej liczbie fragow
+
+Wyswietla liczbe fragow gracza z najlepszym wynikiem Zmienne temp od wysietlania statsow
+
+Liczba fragow rozdzielana jest na skladowe w celu wyswietlenia odpowiedniej bitmapy numerycznej
+
+Wyswietla liczbe fragow gracza z 2gim wynikiem Zmienne temp od wysietlania statsow
+
+Petla zapobiegajaca bledowi powstalemu w chwili gdy na planszy nie ma stworzonego drugiego czolgu
+
+Wyswietla kolor gracza z drugim wynikiem
+
+Wyswietla kolor 2giego gracza wedlug fagow
+
+Wyswietla kolor 1szego gracza wedlug fragow \index{CGra@{CGra}!RysujZmienneMen@{RysujZmienneMen}}
+\index{RysujZmienneMen@{RysujZmienneMen}!CGra@{CGra}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CGra::RysujZmienneMen (int {\em x}, int {\em y}, int {\em z})}\label{class_c_gra_c27076226bf45ea4361cd67d6d302c32}
+
+
+wyswietlanie liczb i znaczkow 
+
+Rysuje liczby w menu oraz znaczki broni w zaleznosci od wprowadzonej zmiennej \char`\"{}z\char`\"{} wyswietlanyjest fragment bitmapy odpowiadajacy za inny element/$\ast$$\ast$ /param x zmienna odpowiedzialna za polozenie w oknie w plaszczyznie x /param y zmienna odpowiedzialna za polozenie w oknie w plaszczyznie y /param z w zaleznosci od potrzeby wyswietla inna czesc bitmapy 
+
+Wyswietlana jest bitmapa odpowiedzialna za cyfry oraz ikony broni \index{CGra@{CGra}!WyswietlKolorCzolguId@{WyswietlKolorCzolguId}}
+\index{WyswietlKolorCzolguId@{WyswietlKolorCzolguId}!CGra@{CGra}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CGra::WyswietlKolorCzolguId (int {\em x}, int {\em y}, int {\em z})}\label{class_c_gra_571eba5efe9d02c3ea1fbdcc8a1d100b}
+
+
+Funkcja wyswietlajaca ikone czolgu. 
+
+w menu gornym sluzaca do pokazywania kolejnosci graczy wzg zdobytych fragow oraz ikony mowiacej nam o kolorze naszego czolgu /param x zmienna odpowiedzialna za polozenie w oknie w plaszczyznie x /param y zmienna odpowiedzialna za polozenie w oknie w plaszczyznie y /param z w zaleznosci od potrzeby wyswietla inna czesc bitmapy 
+
+Wyswietlana jest bitmapa czolgu id 
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Moje dokumenty/Visual Studio Projects/Tanki.v/Kopia (3) Tanki/Gra.h\item 
+Moje dokumenty/Visual Studio Projects/Tanki.v/Kopia (3) Tanki/Gra.cpp\end{CompactItemize}

@@ -1,0 +1,402 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Tanki.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Tanki.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INSTRUKCJA DIALOGEX 0, 0, 362, 221
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Zamknij",IDCANCEL,305,200,50,14
+END
+
+IDD_CREDITS DIALOGEX 0, 0, 329, 192
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Zamknij",IDCANCEL,272,171,50,14
+END
+
+IDD_IP DIALOGEX 0, 0, 263, 22
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU | WS_THICKFRAME
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,206,4,50,13
+    LTEXT           "Wprowadz IP serwera",IDC_STATIC,9,6,75,8
+    EDITTEXT        IDC_EDIT1,87,4,118,13,ES_AUTOHSCROLL
+END
+
+IDD_DOLACZ DIALOGEX 0, 0, 227, 172
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_NICK,39,7,90,15,ES_AUTOHSCROLL
+    CONTROL         "Kolor 1",IDC_KOLOR1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,65,40,38,10
+    CONTROL         "Kolor 2",IDC_KOLOR2,"Button",BS_AUTORADIOBUTTON,65,64,
+                    38,10
+    CONTROL         "Kolor 3",IDC_KOLOR3,"Button",BS_AUTORADIOBUTTON,65,88,
+                    38,10
+    CONTROL         "Kolor 4",IDC_KOLOR4,"Button",BS_AUTORADIOBUTTON,65,112,
+                    38,10
+    CONTROL         "Kolor 5",IDC_KOLOR5,"Button",BS_AUTORADIOBUTTON,65,136,
+                    38,10
+    CONTROL         "Kolor 6",IDC_KOLOR6,"Button",BS_AUTORADIOBUTTON,157,40,
+                    38,10
+    CONTROL         "Kolor 7",IDC_KOLOR7,"Button",BS_AUTORADIOBUTTON,157,64,
+                    38,10
+    CONTROL         "Kolor 8",IDC_KOLOR8,"Button",BS_AUTORADIOBUTTON,157,88,
+                    38,10
+    CONTROL         "Kolor 9",IDC_KOLOR9,"Button",BS_AUTORADIOBUTTON,157,112,
+                    38,10
+    CONTROL         "Kolor 10",IDC_KOLOR10,"Button",BS_AUTORADIOBUTTON,157,
+                    136,42,10
+    DEFPUSHBUTTON   "Dolacz",IDOK,170,7,50,14
+    LTEXT           "NICK:",IDC_STATIC,10,10,25,10
+END
+
+IDD_GRA DIALOGEX 0, 0, 531, 366
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_BORDER | 
+    WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_CZAT DIALOGEX 0, 0, 295, 143
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_TXT,0,130,246,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Send",IDOK,245,130,50,13
+    LISTBOX         IDC_LISTA,0,0,295,131,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_MENU DIALOGEX 0, 0, 111, 139
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Powrot do gry",IDOK,7,56,97,16
+    PUSHBUTTON      "Instrukcja",IDC_INSTRUKCJA,7,76,97,16
+    PUSHBUTTON      "Credits",IDC_CREDITS,7,96,97,16
+    PUSHBUTTON      "Wyjscie z gry",IDCANCEL,7,116,97,16
+END
+
+IDD_WYNIKI DIALOGEX 0, 0, 159, 152
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "EXIT",IDOK,57,134,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_INSTRUKCJA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_CREDITS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+
+    IDD_IP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 17
+    END
+
+    IDD_DOLACZ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_GRA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 524
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 359
+    END
+
+    IDD_MENU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 104
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_WYNIKI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+BM_TANK                 BITMAP                  "res\\fuzja2.bmp"
+BM_TANK_MASK            BITMAP                  "res\\fuzjamaska.bmp"
+BM_BULLETS              BITMAP                  "res\\bullets.bmp"
+BM_BULLETS_MASK         BITMAP                  "res\\bulletsmaska.bmp"
+BM_BONUS                BITMAP                  "res\\BonusSmall.bmp"
+BM_BONUS_MASK           BITMAP                  "res\\BonusSmallMaska.bmp"
+BM_GRASS                BITMAP                  "res\\Image2.bmp"
+BM_OBJECT               BITMAP                  "res\\WDAMONT.bmp"
+BM_OBJECT_MASK          BITMAP                  "res\\WDAMONTMASKA.bmp"
+BM_GRASS_MASK           BITMAP                  "res\\Image2m.bmp"
+BM_MENU_DOWN            BITMAP                  "res\\menutemp3.bmp"
+BM_MENU_DOWN_MASK       BITMAP                  "res\\menutemp3Maska.bmp"
+BM_MENU_UP              BITMAP                  "res\\menutemp4.bmp"
+BM_MENU_UP_MASK         BITMAP                  "res\\menutemp4maska.bmp"
+BM_VARIABLE             BITMAP                  "res\\chhhh.bmp"
+BM_VARIABLE_MASK        BITMAP                  "res\\chhhhm.bmp"
+BM_TYTUL                BITMAP                  "res\\ment34.bmp"
+BM_COLORS               BITMAP                  "res\\czolg.bmp"
+BM_CREDITS              BITMAP                  "res\\tmp00902_500.bmp"
+BM_INSTRUCT             BITMAP                  "res\\Instrukcja1.bmp"
+BM_TANK_ID_MASK         BITMAP                  "res\\idm.bmp"
+BM_TANK_ID              BITMAP                  "res\\id.bmp"
+BM_PLACE                BITMAP                  "res\\place.bmp"
+BM_INSTRUCT_MASk        BITMAP                  "res\\Instrukcjamaska.bmp"
+BM_TYTUL_MASK           BITMAP                  "res\\ment34maska.bmp"
+BM_COLORS_MASK          BITMAP                  "res\\czolgmaska.bmp"
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About Tanki"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Tanki Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_TANKI_DIALOG DIALOGEX 0, 0, 333, 209
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_SYSMENU | 
+    WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Start",IDC_START,235,73,80,17
+    PUSHBUTTON      "Instrukcja",IDC_INSTRUKCJA,235,100,80,17
+    PUSHBUTTON      "Credits",IDC_CREDITS,235,126,80,17
+    PUSHBUTTON      "Wyjscie",IDCANCEL,235,150,80,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TANKI_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 326
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Tanki.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "Tanki.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Tanki..."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Tanki.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

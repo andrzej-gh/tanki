@@ -1,0 +1,74 @@
+\section{CPocisk Class Reference}
+\label{class_c_pocisk}\index{CPocisk@{CPocisk}}
+klasa pocisku, zawiera funkcje i zmienne pociskow  
+
+
+{\tt \#include $<$CPocisk.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf CPocisk} (int BM, float X, float Y, float PHI, int DMG, int TANK)\label{class_c_pocisk_b9bc6887cc3372cd6df8ecf00f8a096f}
+
+\begin{CompactList}\small\item\em konstruktor pocisku, przekazuje informacje i bitmapie, polozeniu, kacie lotu, obrazeniach i o czolgu, ktory wystrzelil dany pocisk \item\end{CompactList}\item 
+int {\bf Kolizja} ()
+\item 
+void {\bf Lot} ()
+\begin{CompactList}\small\item\em sprawdza, czy pocisk w cos trafil; \item\end{CompactList}\item 
+void {\bf Wybuch} ()
+\begin{CompactList}\small\item\em przemieszcza pocisk; \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+int {\bf bm\_\-id}\label{class_c_pocisk_d998616f6a3bf26b90c1a3287b8e9a2c}
+
+\begin{CompactList}\small\item\em niszczy pocisk; \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+klasa pocisku, zawiera funkcje i zmienne pociskow 
+
+
+
+\subsection{Member Function Documentation}
+\index{CPocisk@{CPocisk}!Kolizja@{Kolizja}}
+\index{Kolizja@{Kolizja}!CPocisk@{CPocisk}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int CPocisk::Kolizja ()}\label{class_c_pocisk_d742d9761036211890f3671376324220}
+
+
+Funkcja int \doxyref{CPocisk::Kolizja()}{p.}{class_c_pocisk_d742d9761036211890f3671376324220} sprawdza, czy pocisk koliduje z jakims obiektem na mapie Funkcja jest wywo³ywana podczas zmiany polozenia pocisku 
+
+sprawdzenie kazdego czolgu na mapie
+
+nie mozna ustrzelic samego siebie;
+
+odleglosc pocisku od srodka czolgu;
+
+kolizja dla lasu;
+
+odleglosc pocisku od srodka obiektu;
+
+kolizja dla gor
+
+jesli fugura jest okrag
+
+jesli figura jest kwadrat \index{CPocisk@{CPocisk}!Lot@{Lot}}
+\index{Lot@{Lot}!CPocisk@{CPocisk}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CPocisk::Lot ()}\label{class_c_pocisk_acee8b4e8045916ba91caa3824e4e8e7}
+
+
+sprawdza, czy pocisk w cos trafil; 
+
+Funkcja int \doxyref{CPocisk::Lot()}{p.}{class_c_pocisk_acee8b4e8045916ba91caa3824e4e8e7} zmienia polozenie obiektu na mapie Funkcja jest wywo³ywana przy kazdym kroku zegarowym Jesli zaistnieje kolizja, lub pocisk wykona okreslona liczbe krokow to jest niszczony \index{CPocisk@{CPocisk}!Wybuch@{Wybuch}}
+\index{Wybuch@{Wybuch}!CPocisk@{CPocisk}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CPocisk::Wybuch ()}\label{class_c_pocisk_c80fac261c0714f47ae8082b150140f8}
+
+
+przemieszcza pocisk; 
+
+Funkcja int \doxyref{CPocisk::Wybuch()}{p.}{class_c_pocisk_c80fac261c0714f47ae8082b150140f8} usuwa pocisk z tamblizy i zamienia go z ostatnim ten zas zeruje Funkcja jest wywolywana jesli pocisk ulegnie zniszczeniu 
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Moje dokumenty/Visual Studio Projects/TankiServ/CPocisk.h\item 
+Moje dokumenty/Visual Studio Projects/TankiServ/SERV.cpp\end{CompactItemize}

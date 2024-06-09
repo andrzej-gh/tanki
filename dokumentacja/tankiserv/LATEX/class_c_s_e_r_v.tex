@@ -1,0 +1,76 @@
+\section{CSERV Class Reference}
+\label{class_c_s_e_r_v}\index{CSERV@{CSERV}}
+klasa okienka servera  
+
+
+{\tt \#include $<$SERV.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+afx\_\-msg void {\bf OnTimer} (UINT nIDEvent)
+\begin{CompactList}\small\item\em wykonuje obliczenia \item\end{CompactList}\item 
+afx\_\-msg void {\bf OnBnClickedCancel} ()\label{class_c_s_e_r_v_71d2965d748dabbb5c827c3dd4f64e2e}
+
+\begin{CompactList}\small\item\em funkcja zamykajaca program \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+int {\bf map\_\-id}\label{class_c_s_e_r_v_1062c0adefae84c6af09d51175e76fc6}
+
+\begin{CompactList}\small\item\em zminna przechowuj¹ca indeks mapy, na której odbywa siê rozgrywka \item\end{CompactList}\item 
+int {\bf frag\_\-limit}\label{class_c_s_e_r_v_1f002e7a16de675442137ca030dca91b}
+
+\begin{CompactList}\small\item\em zmienna przechowuj¹ca liczbê fragów które trzeba zdobyæ aby wygraæ \item\end{CompactList}\item 
+char {\bf up\_\-id}\label{class_c_s_e_r_v_c27ccf1f7a641c9d908520b1fd303da5}
+
+\begin{CompactList}\small\item\em zmienna do której wczytywana jest odebrany od klijêta symbol operacji któr¹ chce wykonaæ \item\end{CompactList}\item 
+CListBox {\bf gracze}\label{class_c_s_e_r_v_97d9fe555c8ff1980afdcd597c5ad7cd}
+
+\begin{CompactList}\small\item\em zmienna steruj¹ca list¹ graczy \item\end{CompactList}\item 
+CListBox {\bf lista\_\-czat}\label{class_c_s_e_r_v_9f1e05032f94c84d64753a790445cb2f}
+
+\begin{CompactList}\small\item\em zmienna steruj¹ca list¹ czatu \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+klasa okienka servera 
+
+
+
+\subsection{Member Function Documentation}
+\index{CSERV@{CSERV}!OnTimer@{OnTimer}}
+\index{OnTimer@{OnTimer}!CSERV@{CSERV}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CSERV::OnTimer (UINT {\em nIDEvent})}\label{class_c_s_e_r_v_3b4576f93a43e874fb44c319c877ee51}
+
+
+wykonuje obliczenia 
+
+gdu wywolywana jest pierwszy raz zostaje zainicjowana mapa oraz rozpoczete wszystkie watki za kazdym razem zostaje wyczyszczona i ponownie wyswietlona tablica graczy jezeli sa nowe wiadomosci w tablicy wiadomosci czatu to zostaja one wyswietlone zostaja wywolane funkcje obliczajace polozenia czolgow oraz pociskow 
+
+$<$zmienna pomocnicza do wyswietlania informacji o graczach
+
+$<$zmienna pomoznicza do wyswietlania liczby fragow
+
+$<$zmienna pomoznicza do wyswietlania liczby fragow
+
+$<$zmienna pomoznicza do wyswietlania liczby fragow
+
+$<$zmienna pomoznicza do wyswietlania liczby fragow
+
+$<$zmienna pomoznicza do wyswietlania liczby fragow
+
+$<$zmienna pomoznicza do wyswietlania liczby fragow
+
+petla przesuwa tanki
+
+sprawdza czy czas bonusowej predkosci sie skonczyl
+
+sprawdza czy czas \char`\"{}przeladowania\char`\"{} sie skonczyl\char`\"{}
+
+petla przesuwa pociski 
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Moje dokumenty/Visual Studio Projects/TankiServ/SERV.h\item 
+Moje dokumenty/Visual Studio Projects/TankiServ/SERV.cpp\end{CompactItemize}

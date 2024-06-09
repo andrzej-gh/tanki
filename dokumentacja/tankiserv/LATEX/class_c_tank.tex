@@ -1,0 +1,140 @@
+\section{CTank Class Reference}
+\label{class_c_tank}\index{CTank@{CTank}}
+klasa czolgu, zawiera funkcje i zmienne czolgu  
+
+
+{\tt \#include $<$CTank.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf CTank} (int BM, int X, int Y, int kol, char $\ast$nick)\label{class_c_tank_c94deb3f7a53abb2586443a183135ccb}
+
+\begin{CompactList}\small\item\em konstruktor, przekazuje do czolgu rodzaj ladowanej bitmapy, wspolrzedne polozenia, kolor gracza i nick gracza sterujacego danym czolgiem \item\end{CompactList}\item 
+void {\bf Jazda} (int i)
+\item 
+int {\bf Kolizja} ()
+\begin{CompactList}\small\item\em wywo³uje siê po wciœniêciu klawiszy W lub S, zmienia step\_\-id \item\end{CompactList}\item 
+void {\bf Mina} ()
+\begin{CompactList}\small\item\em sprawdza, czy czolg nie koliduje z innym elementem na mapie \item\end{CompactList}\item 
+int {\bf Obrazenia} (int DMG)
+\begin{CompactList}\small\item\em po wcisnieciu M wywolywana jest ta funkcja i jesli gracz ma miny to tworzy nowa mine \item\end{CompactList}\item 
+void {\bf Obrot} (int i)
+\begin{CompactList}\small\item\em wywolywana jest po kolizji z pociskiem lub mina i zmiejsza armor i/badz zycie danego czolgu \item\end{CompactList}\item 
+void {\bf Przesun} ()
+\begin{CompactList}\small\item\em po wcisnieciu A lub D wywolywana jest ta funkcja i zmienia ona kat obrotu czolgu \item\end{CompactList}\item 
+void {\bf Strzelaj} ()
+\begin{CompactList}\small\item\em wywolywana co cykl timera, przesuwa czolg na podstawie jego zmiennych \item\end{CompactList}\item 
+void {\bf Wybuch} ()
+\begin{CompactList}\small\item\em tworzy nowy pocisk jesli shot\_\-reload=0 \item\end{CompactList}\item 
+void {\bf ZmianaBroni} (int i)
+\begin{CompactList}\small\item\em niszczy czolg, tworzy go w nowym nieznanym polozeniu \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+char {\bf name} [20]\label{class_c_tank_1850e9cce741d2dcbbde2fd9694945a4}
+
+\begin{CompactList}\small\item\em zmienia bron po wcisnieciu Q lub E, E dziala tylko jesli liczbaL jest wieksza od 0 \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+klasa czolgu, zawiera funkcje i zmienne czolgu 
+
+
+
+\subsection{Member Function Documentation}
+\index{CTank@{CTank}!Jazda@{Jazda}}
+\index{Jazda@{Jazda}!CTank@{CTank}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CTank::Jazda (int {\em i})}\label{class_c_tank_083431b246dc34de487d12c8af3245e4}
+
+
+Funkcja \doxyref{CTank::Jazda(int i)}{p.}{class_c_tank_083431b246dc34de487d12c8af3245e4} operuje zmienna step\_\-id odpowiedzialna za wykonywanie ruchu Funkcja jest wywo³ywana po wcisnieciu klawisza W S i przekazywane do wewnatrz jest 1 lub -1 Nastepnie zwiekszamy step\_\-id o ta wartosc i sprawdzane jest, czy nie wykroczyla poza zbior wartosci \{-1,0,1\} \index{CTank@{CTank}!Kolizja@{Kolizja}}
+\index{Kolizja@{Kolizja}!CTank@{CTank}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int CTank::Kolizja ()}\label{class_c_tank_cb4913fb5dbe1cc50d982e85ce53b266}
+
+
+wywo³uje siê po wciœniêciu klawiszy W lub S, zmienia step\_\-id 
+
+Funkcja int \doxyref{CTank::Kolizja()}{p.}{class_c_tank_cb4913fb5dbe1cc50d982e85ce53b266}sprawdza, czy czolg koliduje z jakims innym elementem na mapie Funkcja jest wywo³ywana przy kazdym kroku 
+
+sprawdzenie kazdego czolgu na mapie
+
+Polega ona na sprawdzaniu wierzcholkow badanych dwoch czolgow, jesli wierzcholek 1 znajduje sie w drugim albo odwrotnie, to zaistnieje kolizja
+
+nie mozna kolidowac z samym soba;
+
+wspolrzetna x jednego z wierzcholkow
+
+wspolrzetna y jednego z wierzcholkow
+
+odleglosc miedzy wierzcholkiem jednego a srodkiem druiego czolgu;
+
+kat miedzy wierzcholkiem a srodkiem tankow
+
+ta czesc dotyczy obiektow na mapie, jak zaistnieje kolizja z obiektem sprawdza konkretna wart.kolizyjna i dokonuje odpowiednich zmian
+
+woda, zniszczony las; las; gory;
+
+jesli figura jest okrag
+
+jesli figura jest kwadrat
+
+bonus, zdefiniowany jako pkt na mapie
+
+mina, zdefiniowana jako punkt na mapie \index{CTank@{CTank}!Mina@{Mina}}
+\index{Mina@{Mina}!CTank@{CTank}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CTank::Mina ()}\label{class_c_tank_54fe58ff16112a07fad76679305e20f9}
+
+
+sprawdza, czy czolg nie koliduje z innym elementem na mapie 
+
+Funkcja \doxyref{CTank::Mina()}{p.}{class_c_tank_54fe58ff16112a07fad76679305e20f9} tworzy nowa mine jesli liczbaM gracza jest wieksza od zera Funkcja jest wywo³ywana po wcisnieciu klawisza M Nastepnie obliczamy wspolrzedne postawienia miny, jesli czolg: stoi lub jedzie do przodu to mina stawiana jest za czolgiem, jesli sie cofa- przed \index{CTank@{CTank}!Obrazenia@{Obrazenia}}
+\index{Obrazenia@{Obrazenia}!CTank@{CTank}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int CTank::Obrazenia (int {\em DMG})}\label{class_c_tank_3ba00b510a0f4db82bdd514cab873eb3}
+
+
+po wcisnieciu M wywolywana jest ta funkcja i jesli gracz ma miny to tworzy nowa mine 
+
+Funkcja \doxyref{CTank::Obrazenia(int DMG)}{p.}{class_c_tank_3ba00b510a0f4db82bdd514cab873eb3} zadaje obrazenia i zwraca wartosc 1 jesli czolg ulegl zniszczeniu Funkcja jest wywo³ywana po kolizji czolgu z pociskiem lub mina; Nastepnie sprawdza armor i zadaje obrazenia. Jak obrazenia przekraczaja armor, to obrazenia przechodza na HP i sprawdza, czy czolg zostal zniszczony \index{CTank@{CTank}!Obrot@{Obrot}}
+\index{Obrot@{Obrot}!CTank@{CTank}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CTank::Obrot (int {\em i})}\label{class_c_tank_7a18e4966ccfcf4e3f0910040be8b8b9}
+
+
+wywolywana jest po kolizji z pociskiem lub mina i zmiejsza armor i/badz zycie danego czolgu 
+
+Funkcja \doxyref{CTank::Obrot(int i)}{p.}{class_c_tank_7a18e4966ccfcf4e3f0910040be8b8b9} operuje zmienna phi odpowiedzialna za kat obrotu czolgu Funkcja jest wywo³ywana po wcisnieciu klawisza A D i przekazywane do wewnatrz jest 1 lub -1 Nastepnie zmieniamy phi o i$\ast$PI/8 Jesli nastapi kolizja to cofa czolg do poprzedniego polozenia \index{CTank@{CTank}!Przesun@{Przesun}}
+\index{Przesun@{Przesun}!CTank@{CTank}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CTank::Przesun ()}\label{class_c_tank_2caa3107a2f882c677dc3dfc1006b782}
+
+
+po wcisnieciu A lub D wywolywana jest ta funkcja i zmienia ona kat obrotu czolgu 
+
+Funkcja \doxyref{CTank::Przesun()}{p.}{class_c_tank_2caa3107a2f882c677dc3dfc1006b782} przesuwa czolg i sprawdza, czy wystapila kolizja Funkcja jest wywo³ywana przy kazdym cyklu programowym Nastepnie zmieniamy polozenie srodka (x,y) czolgu zaleznie, czy wykonywany jest ruch, w jakim kierunku i z jaka predkoscia Jesli nastapi kolizja to cofa czolg do poprzedniego polozenia \index{CTank@{CTank}!Strzelaj@{Strzelaj}}
+\index{Strzelaj@{Strzelaj}!CTank@{CTank}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CTank::Strzelaj ()}\label{class_c_tank_15a6c99f2dd4ebb97f74cea7177ad58e}
+
+
+wywolywana co cykl timera, przesuwa czolg na podstawie jego zmiennych 
+
+Funkcja \doxyref{CTank::Strzelaj()}{p.}{class_c_tank_15a6c99f2dd4ebb97f74cea7177ad58e} tworzy nowy pocisk Funkcja jest wywo³ywana po wcisnieciu klawisza SPACE Nastepnie jesli \char`\"{}pocisk jest w komorze\char`\"{} generuje pocisk o wspolrzednych na koncu lufy Zalacza \char`\"{}przeladowanie pocisku\char`\"{}, i jesli aktywna bronia byl laser i sie skoncyzla amunicja to zmienia na normalna bron \index{CTank@{CTank}!Wybuch@{Wybuch}}
+\index{Wybuch@{Wybuch}!CTank@{CTank}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CTank::Wybuch ()}\label{class_c_tank_bdc666ee38911847887b9d03c0cc3393}
+
+
+tworzy nowy pocisk jesli shot\_\-reload=0 
+
+Funkcja \doxyref{CTank::Wybuch()}{p.}{class_c_tank_bdc666ee38911847887b9d03c0cc3393} jesli czolg ulegnie zniszczeniu to zmienia jego polozenie Funkcja jest wywo³ywana jesli HP czolgu osiadnie wartosc zero Nastepnie resetuje zmienne czolgu oprocz score i nick 
+
+szuka nowej lokacji tak, aby czolg z niczym nie kolidowal \index{CTank@{CTank}!ZmianaBroni@{ZmianaBroni}}
+\index{ZmianaBroni@{ZmianaBroni}!CTank@{CTank}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CTank::ZmianaBroni (int {\em i})}\label{class_c_tank_1edd0e51b68744c4619f3052febe3381}
+
+
+niszczy czolg, tworzy go w nowym nieznanym polozeniu 
+
+Funkcja \doxyref{CTank::ZmianaBroni(int i)}{p.}{class_c_tank_1edd0e51b68744c4619f3052febe3381} zmienia aktywana bron, za co jest odpowiedzialna zmienna weapon\_\-id Funkcja jest wywo³ywana po wcisnieciu Q lub E Jesli Q to zmienia bron na normalna, a jesli E, to sprawdza liczbe amunicji lasera jesli jest ona wieksza od zera to zmienia bron na laser 
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Moje dokumenty/Visual Studio Projects/TankiServ/CTank.h\item 
+Moje dokumenty/Visual Studio Projects/TankiServ/SERV.cpp\end{CompactItemize}

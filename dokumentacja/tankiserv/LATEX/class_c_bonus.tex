@@ -1,0 +1,43 @@
+\section{CBonus Class Reference}
+\label{class_c_bonus}\index{CBonus@{CBonus}}
+klasa dziedziczna klasy \doxyref{CObiekt}{p.}{class_c_obiekt}, definiuje funkcje dla bonusow  
+
+
+{\tt \#include $<$CBonus.h$>$}
+
+Inherits {\bf CObiekt}.
+
+Inheritance diagram for CBonus:Collaboration diagram for CBonus:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf CBonus} (int X, int Y, int BONUS, int BM)\label{class_c_bonus_7f1db3d8fa384616f1fa273e15bdf505}
+
+\begin{CompactList}\small\item\em konstruktor klasy \doxyref{CBonus}{p.}{class_c_bonus}, przekazuje polozenie, rodzaj bonusa i nakladanej bitmapy \item\end{CompactList}\item 
+virtual int {\bf Kolizja} ()\label{class_c_bonus_a5c7108658a07494c040292f8a99a654}
+
+\begin{CompactList}\small\item\em Funkcja \doxyref{CBonus::Kolizja()}{p.}{class_c_bonus_a5c7108658a07494c040292f8a99a654} sprawdza czy podczas generowania nowego bonusu na mapie sprawdza, czy z niczym nie koliduje;. \item\end{CompactList}\item 
+virtual void {\bf Wybuch} ()
+\begin{CompactList}\small\item\em przy generowaniu bonusow sprawdza, czy bonus nie upadl na wode, drzewo, badz gore, jak tak to go generuje od nowa \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+klasa dziedziczna klasy \doxyref{CObiekt}{p.}{class_c_obiekt}, definiuje funkcje dla bonusow 
+
+
+
+\subsection{Member Function Documentation}
+\index{CBonus@{CBonus}!Wybuch@{Wybuch}}
+\index{Wybuch@{Wybuch}!CBonus@{CBonus}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CBonus::Wybuch ()\hspace{0.3cm}{\tt  [virtual]}}\label{class_c_bonus_c24a5646b59894d5c43dc60977dee6ca}
+
+
+przy generowaniu bonusow sprawdza, czy bonus nie upadl na wode, drzewo, badz gore, jak tak to go generuje od nowa 
+
+Funkcja \doxyref{CBonus::Wybuch()}{p.}{class_c_bonus_c24a5646b59894d5c43dc60977dee6ca} generuje bonus w losowym miejscu na mapie Funkcja jest wywolywana po zebraniu bonusa Nastepnie generuje go w innym miejscu, jesli zaistnieje kolizja, to powtarza operacje 
+
+Implements {\bf CObiekt} \doxyref{}{p.}{class_c_obiekt_8200c1db0c361426ef7377d598965536}.
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Moje dokumenty/Visual Studio Projects/TankiServ/CBonus.h\item 
+Moje dokumenty/Visual Studio Projects/TankiServ/SERV.cpp\end{CompactItemize}
